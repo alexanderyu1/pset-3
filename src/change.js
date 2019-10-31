@@ -17,7 +17,6 @@ else if (amount < MIN || amount > MAX) {
     console.log("\nInvalid.");
 }
 else {
-
 let quarters = Number(Math.floor(amount / q));
 let dimes = Math.floor(Number((amount - (quarters*q)) / d));
 let nickels = Math.floor(Number((amount - ((quarters*q) + (dimes*d))) / n));
