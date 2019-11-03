@@ -1,9 +1,27 @@
 const readlineSync = require("readline-sync");
 
-const number = readlineSync.question("\nEnter a number: ")
+const number = Number(readlineSync.question("\nEnter a number: "));
 
-let sign = (Math.sign(number));
+if (Number.isInteger(number) == false) {
+  console.log("\nInvalid.");
+}
 
-if (sign = 0) {
-  console.log("\nZero.");
+else if (number < (Number.MIN_SAFE_INTEGER)) {
+  console.log("\nInvaild.")
+}
+
+else if (number > (Number.MAX_SAFE_INTEGER)) {
+  console.log("\nInvaild.")
+}
+
+else if (number < 0) {
+  console.log("\nNegative.")
+}
+
+else if (number > 0) {
+  console.log("\nPositive.")
+}
+
+else if (number == 0) {
+  console.log("\nZero.")
 }
