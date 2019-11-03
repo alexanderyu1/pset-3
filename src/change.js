@@ -10,6 +10,7 @@ let d = 0.10
 let n = 0.05
 let p = 0.01
 
+
 if (Number.isNaN(amount)) {
     console.log("\nInvalid.");
 }
