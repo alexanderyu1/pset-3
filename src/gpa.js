@@ -3,9 +3,6 @@ const readlineSync = require("readline-sync");
 const grade = readlineSync.question("\nEnter a grade: ")
 
 
-
-
-
 if (grade == "A+" || grade == "a+") {
   var gpa = "4.00"
 }
