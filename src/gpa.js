@@ -2,13 +2,67 @@ const readlineSync = require("readline-sync");
 
 const grade = readlineSync.question("\nEnter a grade: ")
 
-let gpa = grade
-let A = 4.00
-let B = 3.00
-let C = 2.00
-let D = 1.00
-let F = 0.00
 
-if (A) {
-  gpa + A
+
+
+
+if (grade == "A+") {
+  var gpa = "4.00"
+}
+
+else if (grade == "A") {
+  var gpa = "4.00"
+}
+
+else if (grade == "A-") {
+  var gpa = "3.67"
+}
+
+else if (grade == "B+") {
+  var gpa = "3.33"
+}
+
+else if (grade == "B") {
+  var gpa = "3.00"
+}
+
+else if (grade == "B-") {
+  var gpa = "2.67"
+}
+
+else if (grade == "C+") {
+  var gpa = "2.33"
+}
+
+else if (grade == "C") {
+  var gpa = "2.00"
+}
+
+else if (grade == "C-") {
+  var gpa = "1.67"
+}
+
+else if (grade == "D+") {
+  var gpa = "1.33"
+}
+
+else if (grade == "D") {
+  var gpa = "1.00"
+}
+
+else if (grade == "D-") {
+  var gpa = "0.67"
+}
+
+else if (grade == "F") {
+  var gpa = "0.00"
+}
+
+else {
+  var gpa = "invalid"
+  console.log("\nInvalid.")
+}
+
+if (gpa != "invalid") {
+  console.log("\nYour GPA is " + gpa + ".")
 }
