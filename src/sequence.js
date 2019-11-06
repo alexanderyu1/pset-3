@@ -66,3 +66,7 @@ else if (number2 < number1 && number3 <number2) {
 else if (number2 <= number1 && number3 <= number2) {
   console.log("\nDecreasing.")
 }
+
+else {
+  console.log("\nUnordered.")
+}
